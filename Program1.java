@@ -1,7 +1,7 @@
 
 public class Program1 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		
 		String str = "Hello i am learning java am";
 		
@@ -24,6 +24,7 @@ public class Program1 {
 		System.out.println(str.lastIndexOf('m'));//last occurrence of character 'm'
 		System.out.println(str.lastIndexOf("am")); //last occurrence of String 'am'
 		
+		
 		//split
 		System.out.println("***************Split*******************");	
 		String temp[] = str.split(" ");
@@ -41,12 +42,23 @@ public class Program1 {
 		System.out.println(str.concat(str));
 		System.out.println(str.concat(str1));
 		
-		System.out.println("************Comparision of strings*****************");
-		
+		System.out.println("************Comparision of strings*****************");		
 		System.out.println(str.compareTo(str1));
+		System.out.println(str.compareToIgnoreCase(str1));
+		System.out.println(str.equalsIgnoreCase(str1)); //equalsIgnoreCase will ignore the upper and lower case
+		System.out.println(str.equalsIgnoreCase(str));
+		System.out.println(str.equals(str1));
+		System.out.println(str.equals(str));
+		System.out.println(str.contentEquals(str1)); //check the content of two strings
 		
+		System.out.println("-------------------------------------");
 		
-		
+		String str2 = "";
+		System.out.println(str2.isEmpty()); //return true if string are empty otherwise return false.
+		System.out.println(str.toUpperCase()); //Print the string in upper case
+		System.out.println(str.toLowerCase()); //Print the string in lower case
+		System.out.println(str.replace('i', 'y')); //replace the character
+		System.out.println(str.replaceAll(str, str1)); //replace the str to str1
 		
 
 		
