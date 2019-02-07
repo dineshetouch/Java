@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Program1 {
 
@@ -60,7 +61,25 @@ public class Program1 {
 		System.out.println(str.replace('i', 'y')); //replace the character
 		System.out.println(str.replaceAll(str, str1)); //replace the str to str1
 		
-
+		System.out.println("*********************trim****************");
+		//The java lang.string.trim()is a built-in function that eliminates leading and trailing spaces. 
+		String str3 = "   eleminate leading and trailing spaces   ";
+		System.out.println(str3.trim()); //trim function will eliminates the leading and trailing spaces
+		
+		System.out.println("---------------------------------");
+		
+		System.out.println(str.startsWith("I")); //it will check the prefix of a string and return boolean value.
+		System.out.println(str.endsWith("am")); //it will check the suffix of a string and return boolean value.
+		System.out.println(str.contains("am")); //it will check the specified word is present or not in a string and return the boolean value.
+		
+		System.out.println(str.valueOf("am")); //The valueOf method returns the relevant Number Object holding the value of the argument passed.
+		
+		System.out.println("--------------------CASE_INSENSITIVE_ORDER-------------------");
+		String s[] = {"A", "B", "c", "a", "b", "Hello"};
+		System.out.println(s.length); //print length of string array
+		System.out.println(Arrays.toString(s));//print the string array
+		Arrays.sort(s, String.CASE_INSENSITIVE_ORDER);//Sort the array in case sensitive order
+		System.out.println(Arrays.toString(s)); // print the sorted array.
 		
 		
 	}
