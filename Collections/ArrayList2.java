@@ -1,7 +1,7 @@
 package collection;
 
 import java.util.ArrayList;
-//Java ArrayList example to add elements
+//Java ArrayList example to add/Remove elements
 public class ArrayList2 {
 
 	public static void main(String[] args) {
