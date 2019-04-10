@@ -16,6 +16,14 @@ public class hashSet {
 		
 		System.out.println("After adding the element in Hashtable: "+set);
 		
+		System.out.println("-------");
+		//iterate through set using for-each loop
+		
+		for(String s:set) {
+			System.out.println(s);
+		}
+		System.out.println("----------");
+		
 		set.remove("Ravi");
 		System.out.println("After deleting the element: "+set);
 		
